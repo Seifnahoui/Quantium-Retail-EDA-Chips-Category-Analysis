@@ -30,7 +30,7 @@ Load both datasets and perform an initial inspection using `.head()`, `.info()`,
 
 ### 3\. 🔗 Merging Datasets
 
-The transaction table and the customer behaviour table were merged on the `LYLTY\\\_CARD\\\_NBR` (loyalty card number) key using a left join, preserving all transaction records.
+The transaction table and the customer behaviour table were merged on the `LYLTY_CARD_NBR` (loyalty card number) key using a left join, preserving all transaction records.
 
 ### 4\. 📅 Time-Series Analysis
 
