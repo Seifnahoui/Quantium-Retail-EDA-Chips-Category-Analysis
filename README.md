@@ -8,8 +8,8 @@ An end-to-end **Exploratory Data Analysis (EDA)** project simulating a real-worl
 
 This project uses two datasets:
 
-* **`QVI\\\_purchase\\\_behaviour.csv`** — Customer loyalty card data including lifestage and premium classification
-* **`QVI\\\_transaction\\\_data.csv`** — Transaction-level data including product names, quantities, and sales amounts
+* **`QVI_purchase_behaviour.csv`** — Customer loyalty card data including lifestage and premium classification
+* **`QVI_transaction_data.csv`** — Transaction-level data including product names, quantities, and sales amounts
 
 The analysis covers data cleaning, feature engineering, time-series exploration, customer segmentation, and brand affinity analysis — all steps that mirror a real Quantium virtual experience task.
 
@@ -42,12 +42,12 @@ New features were derived from existing columns to enrich the analysis:
 
 |Feature|Description|
 |-|-|
-|`pack\\\_size`|Extracted from product name using regex (e.g. `175g` → `175`)|
-|`brand\\\_name`|First word of the product name, with `RRD` corrected to `Red` (Red Rock Deli)|
+|`pack_size`|Extracted from product name using regex (e.g. `175g` → `175`)|
+|`brand_name`|First word of the product name, with `RRD` corrected to `Red` (Red Rock Deli)|
 |`year`, `month`, `day`|Extracted from the `DATE` column|
-|`day\\\_of\\\_week`|Day name from `DATE`|
-|`month\\\_year`|Period column for monthly aggregation|
-|`customer\\\_segment`|Combined `LIFESTAGE` + `PREMIUM\\\_CUSTOMER` label|
+|`day_of_week`|Day name from `DATE`|
+|`month_year`|Period column for monthly aggregation|
+|`customer_segment`|Combined `LIFESTAGE` + `PREMIUM_CUSTOMER` label|
 
 ### 6\. 👥 Customer Segment Analysis
 
@@ -59,7 +59,7 @@ Sales, customer counts, and average units purchased were analysed across all cus
 
 ### 7\. 📊 Statistical Testing
 
-A **Welch's t-test** (`ttest\\\_ind` with `equal\\\_var=False`) was performed to check whether the difference in average units purchased per customer between *Mainstream Mid-age Singles/Couples* and *Mainstream Young Singles/Couples* was statistically significant.
+A **Welch's t-test** (`ttest_ind` with `equal_var=False`) was performed to check whether the difference in average units purchased per customer between *Mainstream Mid-age Singles/Couples* and *Mainstream Young Singles/Couples* was statistically significant.
 
 ### 8\. 🎯 Deep Dive — Mainstream Mid-age Singles/Couples
 
